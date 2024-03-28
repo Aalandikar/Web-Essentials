@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto; /* Aligning the table in the center */
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <table>
+        <tr>
+            <td colspan="2"><h2 style="text-align: center;">Student Registration Form</h2></td>
+        </tr>
+        <tr>
+            <td><label for="studentName">Student's Name:</label></td>
+            <td><input type="text" id="studentName" name="studentName"></td>
+        </tr>
+        
+        <tr>
+            <td><label for="fatherName">Father's Name:</label></td>
+            <td><input type="text" id="fatherName" name="fatherName"></td>
+        </tr>
+        <tr>
+            <td><label for="motherName">Mother's Name:</label></td>
+            <td><input type="text" id="motherName" name="motherName"></td>
+        </tr>
+        <tr>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td><input type="date" id="dob" name="dob"></td>
+        </tr>
+        <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+            <td><label for="mobileNumber">Mobile Number:</label></td>
+            <td><input type="number" id="mobileNumber" name="mobileNumber"></td>
+        </tr>
+        <tr>
+            <td><label for="address">Address:</label></td>
+            <td><textarea id="address" name="address" rows="4" cols="20"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="state">State:</label></td>
+            <td><input type="text" id="state" name="state"></td>
+        </tr>
+        <tr>
+            <td><label for="city">City:</label></td>
+            <td><input type="text" id="city" name="city"></td>
+        </tr>
+        <tr>
+          <!-- <td rowspan="4" align="center"><input type="submit" value="Submit"></td> --> 
+          <td colspan="2" rowspan="6" align="right"><input type="submit" value="Submit"></td>   
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
