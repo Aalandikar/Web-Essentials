@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let num=prompt("Enter Number :=> ");
+        let rev=0,rem;
+        let num1 = num;
+        while(num!=0){
+            rem=num%10;
+            rev=rev*10+rem;
+            num=Math.floor(num/10);
+        }
+        document.write("Reversed Number is:=> " +rev+"<br>");
+        if(num1==rev){
+            document.write(num1 +" Is an ARMSTRONG NUMBER!!!! <br>");
+        }else{
+            document.write(num1 +" Is NOT an ARMSTRONG NUMBER!!!! <br>");
+        }
+    </script> -->
+    <script>
+        let num = prompt("Enter a Number: ");
+        let rev =0,rem;
+        let num1=num;
+        while(num!=0){
+            rem = num%10;
+            rev =rev*10 + rem;
+            num=Math.floor(num/10)
+        }
+        document.write("Reversed Number is;-> " +rev+"<br>")
+        if(num1==rev){
+            document.write("Palindrome Number....!")
+        }
+        else{
+            document.write("Not a Palindrome Number....!")
+        }
+       
+    </script>
+</body>
+</html>

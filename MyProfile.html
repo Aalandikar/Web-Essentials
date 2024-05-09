@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Creative Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="E:\Web_Essentials_Assignments\Images\cat.jpeg" alt="profile pic" class="profile-photo">
+        <h1>Ankita Ganorkar</h1>
+      </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate and dedicated web developer with a keen interest in creating innovative and user-friendly web applications. With a solid foundation in HTML, CSS, and JavaScript, I am constantly expanding my skills and exploring new technologies to stay up-to-date with industry trends.</p>
+    <p>Driven by a love for problem-solving and a desire to create seamless digital experiences, I thrive in collaborative environments where I can contribute my expertise and learn from others. Whether it's designing intuitive user interfaces or optimizing website performance, I am committed to delivering high-quality solutions that exceed expectations.</p>
+    <p>Outside of coding, I enjoy staying active with hobbies like hiking, photography, and playing musical instruments. I believe in the importance of work-life balance and strive to maintain a healthy lifestyle while pursuing my professional goals.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h4>
+        <p>Sciforn Solutions, PUNE</p>
+        <p>Project Domain: ”Banking And Loan”</p>
+        <p> Duration: Dec 2021- May 22</p>
+        <p>Role: Java Developer</p>
+        <p>Team size: 2</p>
+    </h4>
+      <p>        Responsibilities
+            <ol>
+                <li>Serving as a technical expert on development projects.</li>
+                <li>Worked on microservices implementation using Spring boot.</li>
+                <li>Developing and utilizing the restful web services.</li>
+                <li>Requirement gathering, designing of REST APIs.</li>
+                <li>Bug fixing.</li>
+                <li>Preparing the technical specification document based on existing system and new design changes.</li>
+                <li>Active Participation in requirement analysis and Scrum activities.</li>
+                <li>A result-oriented team player and skillful in coordinating with team members.</li>
+                <li>Strong systems, problem-solving and analytical skills, exceptional verbal & written communication skills</li>
+            </ol>
+ </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+        <table>
+            <tr>
+                <td><input type="text" id="name" placeholder="Your Name" class="input"></td>
+                <td><input type="email" id="email" placeholder="Your Email" class="input"></td>
+            </tr>
+            <tr>
+                <td><textarea id="message"  placeholder="Your Message" class="input"></textarea>  </td> 
+                <td> <button type="submit" class="inputSubmit">Send</button> </td>
+      
+            </tr>
+        </table>
+   </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Creative Portfolio</p>
+  </footer>
+
+  <script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // You can add code here to handle form submission, like sending an AJAX request to a server.
+    alert('Thank you for your message!');
+  });
+  </script>
+</body>
+</html>

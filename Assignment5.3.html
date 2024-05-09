@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Demo</title>
+</head>
+<body>
+    <Script>
+
+        function validVoter(age,nationality){
+            if((age>=18) && (nationality.toLowerCase()==="Indian")){
+                document.write("Yes!You Can VOTE.");
+            }else{
+                document.write("No!You Can't VOTE. <br>" + "Age :=> "+age +"<br>"+"Nationality :=> " +nationality +"<br>");
+                //document.write("The age should be equal to or greater than 18 years and the Nationality should be INDIAN for Voting.");
+                if(age<=18){
+                    document.write("Your Age Should be GREATER than  or Equal 18.")
+                }else{
+                    document.write("Your Nationality Should be INDIAN.") 
+                }
+            }
+        }
+
+        let userAge = prompt("Enter your age:");
+        let userNationality = prompt("Enter your nationality:");
+        // let age=19;
+        // let nationality="france";
+        validVoter(userAge,userNationality);
+    </Script>
+</body>
+</html>
